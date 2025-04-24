@@ -18,11 +18,19 @@ namespace SalesWebMvc.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult About()
         {
+            ViewData["Message"] = "Salles Web MVC App From Filipe Rosa";
+            ViewData["email"] = "filiperosa0312@gmail.com";
+            ViewData["Dev"] = "Filipe Rosa";
             return View();
         }
-
+        public IActionResult Privacy()
+        {
+            ViewData["Message"] = "Your application description page";
+            return View();
+        }
+        
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
