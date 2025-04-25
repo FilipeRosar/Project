@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using SalesWebMvc.Data;
 using SalesWebMvc.Models;
+using Pomelo.EntityFrameworkCore.MySql.Infrastructure;
+
 
 namespace SalesWebMvc.Controllers
 {
