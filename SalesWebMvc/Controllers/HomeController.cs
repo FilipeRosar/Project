@@ -31,6 +31,10 @@ namespace SalesWebMvc.Controllers
             ViewData["Message"] = "Your application description page";
             return View();
         }
+        public IActionResult Seller()
+        {
+            return View();
+        } 
         
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
