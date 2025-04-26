@@ -32,7 +32,9 @@ body {
 .btn {
     margin-top: 10px;
     margin-bottom: 10px;
+    
 }
+
 .btn :hover {
     color: black;
 }
