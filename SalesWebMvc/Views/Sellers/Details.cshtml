@@ -1,0 +1,44 @@
+﻿@model SalesWebMvc.Models.Seller
+
+@{
+    ViewData["Title"] = "Details";
+}
+<h2>@ViewData["Title"]</h2>
+
+<h4>Details</h4>
+<hr />
+
+<div>
+    <dl class="row">
+        <div class="col-12 d-flex border-bottom py-2">
+            <dt class="col-sm-2">@Html.DisplayNameFor(Model => Model.Name)</dt>
+            <dd class="col-sm-10">@Html.DisplayFor(Model => Model.Name)</dd>
+        </div>
+
+        <div class="col-12 d-flex border-bottom py-2">
+            <dt class="col-sm-2">@Html.DisplayNameFor(Model => Model.Email)</dt>
+            <dd class="col-sm-10">@Html.DisplayFor(Model => Model.Email)</dd>
+        </div>
+
+        <div class="col-12 d-flex border-bottom py-2">
+            <dt class="col-sm-2">@Html.DisplayNameFor(Model => Model.BirthDate)</dt>
+            <dd class="col-sm-10">@Html.DisplayFor(Model => Model.BirthDate)</dd>
+        </div>
+
+        <div class="col-12 d-flex border-bottom py-2">
+            <dt class="col-sm-2">@Html.DisplayNameFor(Model => Model.BaseSalary)</dt>
+            <dd class="col-sm-10">@Html.DisplayFor(Model => Model.BaseSalary)</dd>
+        </div>
+
+        <div class="col-12 d-flex py-2">
+            <dt class="col-sm-2">@Html.DisplayNameFor(Model => Model.Department)</dt>
+            <dd class="col-sm-10">@Html.DisplayFor(Model => Model.Department.Name)</dd>
+        </div>
+    </dl>
+
+</div>
+<div>
+    <a asp-action="Edit" asp-router-id="@Model.Id" class="btn btn-secondary me-2">Edit</a>
+    <a asp-action="Index" class="btn btn-secondary ">Back</a>
+</div>
+ 
